@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEE9861217B1FC0F004E1A7B /* NDCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE9860817B1FC0F004E1A7B /* NDCamera.m */; };
+		CEE9861317B1FC0F004E1A7B /* NDCameraFocusSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE9860A17B1FC0F004E1A7B /* NDCameraFocusSquare.m */; };
+		CEE9861417B1FC0F004E1A7B /* NDCameraHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE9860C17B1FC0F004E1A7B /* NDCameraHelper.m */; };
+		CEE9861517B1FC0F004E1A7B /* NDCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE9860E17B1FC0F004E1A7B /* NDCameraView.m */; };
+		CEE9861617B1FC0F004E1A7B /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE9861117B1FC0F004E1A7B /* FileManager.m */; };
+		CEE9861917B20868004E1A7B /* ImageActor.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE9861817B20868004E1A7B /* ImageActor.m */; };
+		CEE9861C17B21809004E1A7B /* NDAutoCameraDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE9861B17B21809004E1A7B /* NDAutoCameraDelegate.m */; };
+		CEE9862D17B23B6E004E1A7B /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE9862B17B23B63004E1A7B /* AssetsLibrary.framework */; };
+		CEE9864517B241C6004E1A7B /* libMWPhotoBrowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE9864217B241B1004E1A7B /* libMWPhotoBrowser.a */; };
+		CEE9864817B242C7004E1A7B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE9864617B242B4004E1A7B /* MessageUI.framework */; };
+		CEE9864A17B24C28004E1A7B /* MWPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CEE9864917B24C28004E1A7B /* MWPhotoBrowser.bundle */; };
+		CEF04D5917B0BDF90001F186 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF04D5817B0BDF90001F186 /* UIKit.framework */; };
+		CEF04D5B17B0BDF90001F186 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF04D5A17B0BDF90001F186 /* Foundation.framework */; };
+		CEF04D5D17B0BDF90001F186 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF04D5C17B0BDF90001F186 /* CoreGraphics.framework */; };
+		CEF04D6317B0BDF90001F186 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEF04D6117B0BDF90001F186 /* InfoPlist.strings */; };
+		CEF04D6517B0BDF90001F186 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF04D6417B0BDF90001F186 /* main.m */; };
+		CEF04D6917B0BDF90001F186 /* NDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF04D6817B0BDF90001F186 /* NDAppDelegate.m */; };
+		CEF04D6B17B0BDF90001F186 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF04D6A17B0BDF90001F186 /* Default.png */; };
+		CEF04D6D17B0BDF90001F186 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF04D6C17B0BDF90001F186 /* Default@2x.png */; };
+		CEF04D6F17B0BDF90001F186 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF04D6E17B0BDF90001F186 /* Default-568h@2x.png */; };
+		CEF04D7217B0BDF90001F186 /* NDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF04D7117B0BDF90001F186 /* NDViewController.m */; };
+		CEF04D7517B0BDF90001F186 /* NDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF04D7317B0BDF90001F186 /* NDViewController.xib */; };
+		CEF04D8F17B0C1E20001F186 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF04D7E17B0BE610001F186 /* AVFoundation.framework */; };
+		CEF04D9017B0C1E20001F186 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF04D8617B0BEC70001F186 /* CoreAudio.framework */; };
+		CEF04D9117B0C1E20001F186 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF04D8217B0BE910001F186 /* CoreMedia.framework */; };
+		CEF04D9217B0C1E20001F186 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF04D8C17B0BF320001F186 /* ImageIO.framework */; };
+		CEF04D9317B0C1E20001F186 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF04D8317B0BE910001F186 /* MediaPlayer.framework */; };
+		CEF04D9417B0C1E20001F186 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF04D8817B0BF130001F186 /* MobileCoreServices.framework */; };
+		CEF04D9517B0C1E20001F186 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF04D8017B0BE750001F186 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEE9864117B241B1004E1A7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEE9863D17B241B1004E1A7B /* MWPhotoBrowser.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C6F96C414AF704100F8389A;
+			remoteInfo = MWPhotoBrowser;
+		};
+		CEE9864317B241C0004E1A7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEE9863D17B241B1004E1A7B /* MWPhotoBrowser.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C6F96C314AF704100F8389A;
+			remoteInfo = MWPhotoBrowser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEE9860717B1FC0F004E1A7B /* NDCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDCamera.h; sourceTree = "<group>"; };
+		CEE9860817B1FC0F004E1A7B /* NDCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDCamera.m; sourceTree = "<group>"; };
+		CEE9860917B1FC0F004E1A7B /* NDCameraFocusSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDCameraFocusSquare.h; sourceTree = "<group>"; };
+		CEE9860A17B1FC0F004E1A7B /* NDCameraFocusSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDCameraFocusSquare.m; sourceTree = "<group>"; };
+		CEE9860B17B1FC0F004E1A7B /* NDCameraHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDCameraHelper.h; sourceTree = "<group>"; };
+		CEE9860C17B1FC0F004E1A7B /* NDCameraHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDCameraHelper.m; sourceTree = "<group>"; };
+		CEE9860D17B1FC0F004E1A7B /* NDCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDCameraView.h; sourceTree = "<group>"; };
+		CEE9860E17B1FC0F004E1A7B /* NDCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDCameraView.m; sourceTree = "<group>"; };
+		CEE9861017B1FC0F004E1A7B /* FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
+		CEE9861117B1FC0F004E1A7B /* FileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
+		CEE9861717B20868004E1A7B /* ImageActor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageActor.h; sourceTree = "<group>"; };
+		CEE9861817B20868004E1A7B /* ImageActor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageActor.m; sourceTree = "<group>"; };
+		CEE9861A17B21809004E1A7B /* NDAutoCameraDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDAutoCameraDelegate.h; sourceTree = "<group>"; };
+		CEE9861B17B21809004E1A7B /* NDAutoCameraDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDAutoCameraDelegate.m; sourceTree = "<group>"; };
+		CEE9862B17B23B63004E1A7B /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		CEE9863D17B241B1004E1A7B /* MWPhotoBrowser.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MWPhotoBrowser.xcodeproj; path = MWPhotoBrowser/MWPhotoBrowser.xcodeproj; sourceTree = "<group>"; };
+		CEE9864617B242B4004E1A7B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		CEE9864917B24C28004E1A7B /* MWPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MWPhotoBrowser.bundle; path = ../MWPhotoBrowser/MWPhotoBrowser.bundle; sourceTree = "<group>"; };
+		CEF04D5517B0BDF90001F186 /* Camera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Camera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF04D5817B0BDF90001F186 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CEF04D5A17B0BDF90001F186 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CEF04D5C17B0BDF90001F186 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CEF04D6017B0BDF90001F186 /* Camera-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Camera-Info.plist"; sourceTree = "<group>"; };
+		CEF04D6217B0BDF90001F186 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CEF04D6417B0BDF90001F186 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEF04D6617B0BDF90001F186 /* Camera-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Camera-Prefix.pch"; sourceTree = "<group>"; };
+		CEF04D6717B0BDF90001F186 /* NDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NDAppDelegate.h; sourceTree = "<group>"; };
+		CEF04D6817B0BDF90001F186 /* NDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NDAppDelegate.m; sourceTree = "<group>"; };
+		CEF04D6A17B0BDF90001F186 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CEF04D6C17B0BDF90001F186 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CEF04D6E17B0BDF90001F186 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CEF04D7017B0BDF90001F186 /* NDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NDViewController.h; sourceTree = "<group>"; };
+		CEF04D7117B0BDF90001F186 /* NDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NDViewController.m; sourceTree = "<group>"; };
+		CEF04D7417B0BDF90001F186 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NDViewController.xib; sourceTree = "<group>"; };
+		CEF04D7E17B0BE610001F186 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CEF04D8017B0BE750001F186 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CEF04D8217B0BE910001F186 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		CEF04D8317B0BE910001F186 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		CEF04D8617B0BEC70001F186 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		CEF04D8817B0BF130001F186 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		CEF04D8C17B0BF320001F186 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEF04D5217B0BDF90001F186 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE9864817B242C7004E1A7B /* MessageUI.framework in Frameworks */,
+				CEE9864517B241C6004E1A7B /* libMWPhotoBrowser.a in Frameworks */,
+				CEE9862D17B23B6E004E1A7B /* AssetsLibrary.framework in Frameworks */,
+				CEF04D8F17B0C1E20001F186 /* AVFoundation.framework in Frameworks */,
+				CEF04D9017B0C1E20001F186 /* CoreAudio.framework in Frameworks */,
+				CEF04D9117B0C1E20001F186 /* CoreMedia.framework in Frameworks */,
+				CEF04D9217B0C1E20001F186 /* ImageIO.framework in Frameworks */,
+				CEF04D9317B0C1E20001F186 /* MediaPlayer.framework in Frameworks */,
+				CEF04D9417B0C1E20001F186 /* MobileCoreServices.framework in Frameworks */,
+				CEF04D9517B0C1E20001F186 /* QuartzCore.framework in Frameworks */,
+				CEF04D5917B0BDF90001F186 /* UIKit.framework in Frameworks */,
+				CEF04D5B17B0BDF90001F186 /* Foundation.framework in Frameworks */,
+				CEF04D5D17B0BDF90001F186 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEE9860617B1FC0F004E1A7B /* CameraShare */ = {
+			isa = PBXGroup;
+			children = (
+				CEE9860717B1FC0F004E1A7B /* NDCamera.h */,
+				CEE9860817B1FC0F004E1A7B /* NDCamera.m */,
+				CEE9860917B1FC0F004E1A7B /* NDCameraFocusSquare.h */,
+				CEE9860A17B1FC0F004E1A7B /* NDCameraFocusSquare.m */,
+				CEE9860B17B1FC0F004E1A7B /* NDCameraHelper.h */,
+				CEE9860C17B1FC0F004E1A7B /* NDCameraHelper.m */,
+				CEE9860D17B1FC0F004E1A7B /* NDCameraView.h */,
+				CEE9860E17B1FC0F004E1A7B /* NDCameraView.m */,
+				CEE9861A17B21809004E1A7B /* NDAutoCameraDelegate.h */,
+				CEE9861B17B21809004E1A7B /* NDAutoCameraDelegate.m */,
+			);
+			path = CameraShare;
+			sourceTree = "<group>";
+		};
+		CEE9860F17B1FC0F004E1A7B /* HelperShare */ = {
+			isa = PBXGroup;
+			children = (
+				CEE9861017B1FC0F004E1A7B /* FileManager.h */,
+				CEE9861117B1FC0F004E1A7B /* FileManager.m */,
+				CEE9861717B20868004E1A7B /* ImageActor.h */,
+				CEE9861817B20868004E1A7B /* ImageActor.m */,
+			);
+			path = HelperShare;
+			sourceTree = "<group>";
+		};
+		CEE9863E17B241B1004E1A7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEE9864217B241B1004E1A7B /* libMWPhotoBrowser.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEF04D4C17B0BDF90001F186 = {
+			isa = PBXGroup;
+			children = (
+				CEE9863D17B241B1004E1A7B /* MWPhotoBrowser.xcodeproj */,
+				CEF04D5E17B0BDF90001F186 /* Camera */,
+				CEF04D5717B0BDF90001F186 /* Frameworks */,
+				CEF04D5617B0BDF90001F186 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEF04D5617B0BDF90001F186 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEF04D5517B0BDF90001F186 /* Camera.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEF04D5717B0BDF90001F186 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEE9864617B242B4004E1A7B /* MessageUI.framework */,
+				CEE9862B17B23B63004E1A7B /* AssetsLibrary.framework */,
+				CEF04D8C17B0BF320001F186 /* ImageIO.framework */,
+				CEF04D8817B0BF130001F186 /* MobileCoreServices.framework */,
+				CEF04D8617B0BEC70001F186 /* CoreAudio.framework */,
+				CEF04D8217B0BE910001F186 /* CoreMedia.framework */,
+				CEF04D8317B0BE910001F186 /* MediaPlayer.framework */,
+				CEF04D8017B0BE750001F186 /* QuartzCore.framework */,
+				CEF04D7E17B0BE610001F186 /* AVFoundation.framework */,
+				CEF04D5817B0BDF90001F186 /* UIKit.framework */,
+				CEF04D5A17B0BDF90001F186 /* Foundation.framework */,
+				CEF04D5C17B0BDF90001F186 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEF04D5E17B0BDF90001F186 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				CEF04D9617B0C2B90001F186 /* Share */,
+				CEF04D6717B0BDF90001F186 /* NDAppDelegate.h */,
+				CEF04D6817B0BDF90001F186 /* NDAppDelegate.m */,
+				CEF04D7017B0BDF90001F186 /* NDViewController.h */,
+				CEF04D7117B0BDF90001F186 /* NDViewController.m */,
+				CEF04D7317B0BDF90001F186 /* NDViewController.xib */,
+				CEF04D5F17B0BDF90001F186 /* Supporting Files */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		CEF04D5F17B0BDF90001F186 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEE9864917B24C28004E1A7B /* MWPhotoBrowser.bundle */,
+				CEF04D6017B0BDF90001F186 /* Camera-Info.plist */,
+				CEF04D6117B0BDF90001F186 /* InfoPlist.strings */,
+				CEF04D6417B0BDF90001F186 /* main.m */,
+				CEF04D6617B0BDF90001F186 /* Camera-Prefix.pch */,
+				CEF04D6A17B0BDF90001F186 /* Default.png */,
+				CEF04D6C17B0BDF90001F186 /* Default@2x.png */,
+				CEF04D6E17B0BDF90001F186 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEF04D9617B0C2B90001F186 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				CEE9860617B1FC0F004E1A7B /* CameraShare */,
+				CEE9860F17B1FC0F004E1A7B /* HelperShare */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEF04D5417B0BDF90001F186 /* Camera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEF04D7817B0BDF90001F186 /* Build configuration list for PBXNativeTarget "Camera" */;
+			buildPhases = (
+				CEF04D5117B0BDF90001F186 /* Sources */,
+				CEF04D5217B0BDF90001F186 /* Frameworks */,
+				CEF04D5317B0BDF90001F186 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEE9864417B241C0004E1A7B /* PBXTargetDependency */,
+			);
+			name = Camera;
+			productName = Camera;
+			productReference = CEF04D5517B0BDF90001F186 /* Camera.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEF04D4D17B0BDF90001F186 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ND;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = user;
+			};
+			buildConfigurationList = CEF04D5017B0BDF90001F186 /* Build configuration list for PBXProject "Camera" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CEF04D4C17B0BDF90001F186;
+			productRefGroup = CEF04D5617B0BDF90001F186 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CEE9863E17B241B1004E1A7B /* Products */;
+					ProjectRef = CEE9863D17B241B1004E1A7B /* MWPhotoBrowser.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				CEF04D5417B0BDF90001F186 /* Camera */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CEE9864217B241B1004E1A7B /* libMWPhotoBrowser.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMWPhotoBrowser.a;
+			remoteRef = CEE9864117B241B1004E1A7B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEF04D5317B0BDF90001F186 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE9864A17B24C28004E1A7B /* MWPhotoBrowser.bundle in Resources */,
+				CEF04D6317B0BDF90001F186 /* InfoPlist.strings in Resources */,
+				CEF04D6B17B0BDF90001F186 /* Default.png in Resources */,
+				CEF04D6D17B0BDF90001F186 /* Default@2x.png in Resources */,
+				CEF04D6F17B0BDF90001F186 /* Default-568h@2x.png in Resources */,
+				CEF04D7517B0BDF90001F186 /* NDViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEF04D5117B0BDF90001F186 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF04D6517B0BDF90001F186 /* main.m in Sources */,
+				CEF04D6917B0BDF90001F186 /* NDAppDelegate.m in Sources */,
+				CEF04D7217B0BDF90001F186 /* NDViewController.m in Sources */,
+				CEE9861217B1FC0F004E1A7B /* NDCamera.m in Sources */,
+				CEE9861317B1FC0F004E1A7B /* NDCameraFocusSquare.m in Sources */,
+				CEE9861417B1FC0F004E1A7B /* NDCameraHelper.m in Sources */,
+				CEE9861517B1FC0F004E1A7B /* NDCameraView.m in Sources */,
+				CEE9861617B1FC0F004E1A7B /* FileManager.m in Sources */,
+				CEE9861917B20868004E1A7B /* ImageActor.m in Sources */,
+				CEE9861C17B21809004E1A7B /* NDAutoCameraDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEE9864417B241C0004E1A7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MWPhotoBrowser;
+			targetProxy = CEE9864317B241C0004E1A7B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEF04D6117B0BDF90001F186 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEF04D6217B0BDF90001F186 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CEF04D7317B0BDF90001F186 /* NDViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEF04D7417B0BDF90001F186 /* en */,
+			);
+			name = NDViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEF04D7617B0BDF90001F186 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CEF04D7717B0BDF90001F186 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEF04D7917B0BDF90001F186 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Camera/Camera-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Camera/Camera-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REZ_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "./MWPhotoBrowser/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CEF04D7A17B0BDF90001F186 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Camera/Camera-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Camera/Camera-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REZ_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "./MWPhotoBrowser/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEF04D5017B0BDF90001F186 /* Build configuration list for PBXProject "Camera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF04D7617B0BDF90001F186 /* Debug */,
+				CEF04D7717B0BDF90001F186 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEF04D7817B0BDF90001F186 /* Build configuration list for PBXNativeTarget "Camera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF04D7917B0BDF90001F186 /* Debug */,
+				CEF04D7A17B0BDF90001F186 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEF04D4D17B0BDF90001F186 /* Project object */;
+}
